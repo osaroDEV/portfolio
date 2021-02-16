@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/logo.jpg" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/blog-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blog: Osaro Onaiwu</title>
+  </head>
+  <body>
+    <!-- loader -->
+    <div id="loader-container">
+      <div id="red"></div>
+      <div id="green"></div>
+      <div id="blue"></div>
+    </div>
+    <!-- page -->
+    <div id="showcap">
+      <div id="layout">
+        <!-- navigation bar -->
+        <div id="nav-container">
+          <!-- left icon -->
+          <!-- <div id="chess">&#9814;</div> -->
+          <div id="drive">💾</div>
+          <!-- light-dark-mode icon -->
+          <div id="button-container">
+            <i
+              id="dark"
+              onClick="dlm()"
+              title="toggle dark mode"
+              class="bx bxs-sun"
+            ></i>
+            <i
+              id="light"
+              onClick="dlm()"
+              title="toggle dark mode"
+              class="bx bxs-moon"
+            ></i>
+          </div>
+          <!-- hamburger -->
+          <div>
+            <div id="hamburger-container">
+              <div id="hamburger" class="open"></div>
+            </div>
+            <nav id="nav-links" class="menu-bar">
+              <ul>
+                <li><a href="/index.html" id="links">Home</a></li>
+                <li>
+                  <a href="#projects" class="proj" id="links">Projects</a>
+                </li>
+                <li>
+                  <a class="current" href="/blog.html" id="links">Blog</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h1 class="header">Articles</h1>
+        <h3 class="header-description">
+          <p>Thoughts, posts, tutorials, snippets, everything else</p>
+        </h3>
+        <h2 class="year">2020</h2>
+        <section class="blog-items">
+          <div class="blog-item">
+            <span class="date">Oct 15</span>
+            <div class="blog-description">
+              
+                <h4>One Year Into Coding: Journey so far</h4>
+              
+            </div>
+            <a href="blog-page-jsf.html"><button class='blog-btn'>view</button></a>
+          </div>
+          <hr />
+          <div class="blog-item">
+            <span class="date">Aug 26</span>
+            <div class="blog-description">
+                <h4>My Journey & Thoughts</h4>
+            </div>
+            <a href="/blog-page-mjt.html"><button class='blog-btn'>view</button></a>
+          </div>
+          <hr />
+        </section>
+      </div>
+    <script src="./js/main.js"></script>
+    </body>
+</html>

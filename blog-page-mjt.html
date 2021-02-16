@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/logo.jpg" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/blog-page-mjt-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Journey & Thoughts</title>
+  </head>
+  <body>
+    <!-- loader -->
+    <div id="loader-container">
+      <div id="red"></div>
+      <div id="green"></div>
+      <div id="blue"></div>
+    </div>
+    <!-- page -->
+    <div id="showcap">
+      <div id="layout">
+        <!-- navigation bar -->
+        <div id="nav-container">
+          <!-- left icon -->
+          <!-- <div id="chess">&#9814;</div> -->
+          <div id="drive">💾</div>
+          <!-- light-dark-mode icon -->
+          <div id="button-container">
+            <i
+              id="dark"
+              onClick="dlm()"
+              title="toggle dark mode"
+              class="bx bxs-sun"
+            ></i>
+            <i
+              id="light"
+              onClick="dlm()"
+              title="toggle dark mode"
+              class="bx bxs-moon"
+            ></i>
+          </div>
+          <!-- hamburger -->
+          <div>
+            <div id="hamburger-container">
+              <div id="hamburger" class="open"></div>
+            </div>
+            <nav id="nav-links" class="menu-bar">
+              <ul>
+                <li><a href="/index.html" id="links">Home</a></li>
+                <li><a href="#projects" id="links">Projects</a></li>
+                <li><a href="/blog.html" id="links">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h1 class="title">My Journey & Thoughts</h1>
+        <span class="publish-note"
+          >By <strong>Osaro Onaiwu</strong> on August 26, 2020</span
+        >
+        <div class="tags">
+          <span>html</span>
+          <span>css</span>
+          <span>javascript</span>
+        </div>
+        <div class="main">
+          <p>
+            Hello Dev World! I am Osaro, a self-learning Front-End Developer
+            fluent in HTML, CSS, JS (sub-intermediate) as well as some libraries
+            & frameworks. For about 10 months, I have been on this road of
+            discovery and I must say it's been an interesting ride.
+          </p>
+          <p>
+            Having studied on platforms such as freeCodeCamp, codeCademy,
+            w3schools & sololearn, I can confidently claim to be a Developer
+            inasmuch as I know that I still have a lot to learn. My projects are
+            a testament of my growth over time and I am glad that I have been
+            making stuff right from the start. There is so much ground to cover
+            and I have come to realize that being a Developer is a life-long
+            learning process. If you are just starting to learn coding, I advise
+            you try to create something, get your hands dirty. There are a
+            mammoth of resources out there, get busy studying while writing
+            codes. Try to pass-on the knowledge to someone below your fluency
+            level to help them and yourself.
+          </p>
+          <p>My first post, I hope to write more...</p>
+          <p>
+            Happy Coding! I am @osaroDEV on twitter, github, codepen & dev.to
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

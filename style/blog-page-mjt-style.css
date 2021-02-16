@@ -1,0 +1,379 @@
+html {
+	font-size: 16px;
+}
+body {
+  background-color: #f1f1f1;
+	font-family: 'Exo', sans-serif;
+	min-width: 240px;
+}
+
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* margin-bottom: 0.5em; */
+}
+h2 {
+	margin: 0.5em 0;
+	font-weight: 900;
+}
+/* ------------ */
+#loader-container {
+	display: flex;
+	width: 50px;
+	justify-content: space-between;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+	visibility: hidden;
+}
+#red,
+#green,
+#blue {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	animation: balls 0.3s linear infinite;
+}
+#red {
+	background: red;
+}
+@keyframes balls {
+	0% {
+		transform: translateY(0);
+	}
+	25% {
+		transform: translateY(-10px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	75% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+#green {
+	background: green;
+	animation-delay: 0.05s;
+}
+
+#blue {
+	background: blue;
+	animation-delay: 0.1s;
+}
+
+/* nav */
+#showcap {
+	/* visibility: hidden; */
+	/* margin-top: 3.75em; */
+	height: 100%;
+}
+
+#nav-container {
+	/* position: fixed;
+	top: 0; */
+	width: 100%;
+	height: 3.125em;
+	/* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 2px solid;
+	/* 	width: 50%; */
+	/* border-bottom: 5px solid; */
+	/* background: #eee; */
+  z-index: 1;
+  /* margin-top: 1em; */
+}
+/* redirect up */
+.up {
+	position: fixed;
+	right: 0.1em;
+	bottom: 2em;
+	font-size: 2.5rem;
+}
+.alter .up {
+	color: #fff;
+}
+/* drive */
+#drive {
+	margin-left: 0.4em;
+	font-size: 1.5rem;
+}
+/* sun & moon */
+#button-container {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+	border: none;
+}
+#dark,
+#light {
+	position: absolute;
+	padding: 5px;
+	display: inline;
+	font-size: 1.5rem;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+#dark {
+	background: #555;
+	color: #fff;
+}
+#light {
+	background: #eee;
+	color: #000;
+}
+#dark:hover {
+	font-size: 1.7rem;
+}
+#light:hover {
+	font-size: 1.7rem;
+}
+.alter {
+	background-color: #555;
+	color: #fff;
+}
+.alter-icons {
+	color: #fff;
+}
+.alter-menu {
+	color: #fff;
+}
+.alter-hamburger #hamburger {
+	background-color: #fff;
+}
+.alter-hamburger #hamburger::after {
+	background-color: #fff;
+}
+.alter-hamburger #hamburger::before {
+	background-color: #fff;
+}
+/* hamburger */
+/* hamburger-menu */
+#hamburger-container {
+	width: 3.125em;
+	height: 3.125em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2000;
+}
+#hamburger {
+	width: 1.75em;
+	/* height: 0.275em; */
+	height: 0.1325em;
+	background-color: #000;
+	border-radius: 0.7em;
+	transition: 0.1s;
+}
+#hamburger::after, #hamburger::before {
+	content: '';
+	width: 0.875em;
+	/* height: 0.275em; */
+	height: 0.1325em;
+	background-color: #000;
+	border-radius: 0.7em;
+	transition: 0.1s;
+	position: absolute;
+}
+#hamburger::after {
+	transform: translateY(0.70em);
+}
+#hamburger::before {
+	transform: translateY(-0.70em);
+}
+.open #hamburger {
+	background-color: transparent;
+}
+.open #hamburger::after {
+	transform: rotate(45deg);
+	width: 1.75em;
+}
+.open #hamburger::before {
+	transform: rotate(-45deg);
+	width: 1.75em;
+}
+.menu-bar {
+	visibility: hidden;
+	position: absolute;
+	top: 3.125em;
+	right: 0;
+	width: 100vw;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.95);
+	/* background-color: #eeb336; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+}
+
+ul {
+	list-style-type: none;
+  height: 40vh;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	position: relative;
+	text-align: center;
+}
+
+li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 900;
+	font-size: 1.3rem;
+	margin: 1em 0;
+	display: inline-block;
+}
+/*a {
+	 color: black;
+} */
+
+/* .current {
+  color: #fed700;
+  border-bottom: 1px solid #fed700;
+} */
+
+li:hover a {
+	color: #fff;
+}
+li:hover {
+	background: #555;
+}
+
+@media (max-height: 400px) {
+  .current {
+    color: #fed700;
+    border-bottom: 1px solid #fed700;
+  }
+  li a {
+    margin: 0.5em 0;
+  }
+}
+
+.reveal {
+	visibility: visible;
+}
+
+@media (min-width: 768px) {
+  #hamburger-container {
+    display: none;
+    /* width: 300px; */
+  }
+  /* #button-container {
+		margin-left: -9em;
+	} */
+  .menu-bar {
+    width: auto;
+    height: 3em;
+    margin-right: 1em;
+    position: absolute;
+    top: 0px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    visibility: visible;
+  }
+
+  ul {
+    flex-direction: row;
+    width: 20vw;
+    height: 80%;
+    position: static;
+    justify-content: space-between;
+    /* margin-left: 200px; */
+  }
+  li {
+    height: 100%;
+    width: auto;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    display: inline-block;
+    border-radius: 0.25em;
+  }
+  li a {
+    position: static;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5em;
+    font-weight: initial;
+    font-size: 0.85em;
+    color: #000;
+  }
+
+  li:hover {
+    background: #999;
+  }
+}
+
+/* media queries */
+
+@media (min-width: 500px) {
+	/* body {
+		background: rgba(255, 255, 255, 0.3);
+	} */
+	html {
+		font-size: 18px;
+	}
+}
+@media (min-width: 750px)  {
+	/* body {
+		background: rgba(255, 255, 255, 0.5);
+	} */
+	html {
+		font-size: 18px;
+  }
+}
+
+@media (min-width: 845px)  {
+	/* body {
+		background: rgba(255, 255, 255, 0.8);
+	} */
+	html {
+		font-size: 20px;
+  }
+}
+
+.container {
+	padding: 1em;
+	height: 100%;
+}
+.title {
+  margin: 16px 0;
+}
+.publish-note {
+  display: block;
+}
+.tags span {
+		/* margin-top: 0.5em; */
+		padding: 0.125em 0.5em;
+		background-color: rgb(80, 135, 255);
+		display: inline-block;
+		border-radius: 0.625em;
+		color: #fff;
+		font-size: 0.5rem;
+		letter-spacing: 0.2em;
+    line-height: 1.5em;
+}
+.main {
+  
+  margin: 2em 0;
+}
+.main > p {
+  margin: 1em 0;
+}
