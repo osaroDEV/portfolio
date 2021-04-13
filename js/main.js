@@ -8,34 +8,33 @@ const loaderer = () => {
 setTimeout(loaderer, 2000);
 
 // light-dark mode
-const li = document.getElementById("light"); // moon
-const da = document.getElementById("dark"); // sun
+const checkbox = document.getElementById("mode");
+const label = document.getElementsByClassName("mode");
 const icon = document.querySelectorAll("#social i"); //social media icons
 const menu = document.querySelectorAll("#links");
 let line = document.querySelector('#hamburger-container');
 const up = document.getElementsByClassName("up"); // up
-li.onclick = () => {
-	li.style.visibility = "hidden";
-	da.style.visibility = "visible";
-	document.getElementById("showcap").classList.toggle("alter");
+checkbox.addEventListener("change", () => {
+	document.body.classList.toggle("alter");
 	for (let i = 0; i < icon.length; i++)
-	icon[i].classList.toggle("alter-icons");
+		icon[i].classList.toggle("alter-icons");
 	for (let a = 0; a < menu.length; a++)
-	menu[a].classList.toggle("alter-menu");
+		menu[a].classList.toggle("alter-menu");
 	line.classList.toggle("alter-hamburger");
 	up.classList.toggle("alter");
-};
+});
+	
 
-da.onclick = () => {
-	li.style.visibility = "visible";
-	da.style.visibility = "hidden";
-	document.getElementById("showcap").classList.toggle("alter");
-	for (let i = 0; i < icon.length; i++)
-	icon[i].classList.toggle("alter-icons");
-	for (let a = 0; a < menu.length; a++)
-	menu[a].classList.toggle("alter-menu");
-	line.classList.toggle("alter-hamburger");
-};
+// da.onclick = () => {
+// 	li.style.visibility = "visible";
+// 	da.style.visibility = "hidden";
+// 	document.getElementById("showcap").classList.toggle("alter");
+// 	for (let i = 0; i < icon.length; i++)
+// 	icon[i].classList.toggle("alter-icons");
+// 	for (let a = 0; a < menu.length; a++)
+// 	menu[a].classList.toggle("alter-menu");
+// 	line.classList.toggle("alter-hamburger");
+// };
 
 // hamburger
 let container = document.getElementById('hamburger-container');
