@@ -130,15 +130,15 @@ svg {
 
 .switch {
 	background-color: #fff;
-	width: 20px;
-	height: 20px;
+	width: 18px;
+	height: 18px;
 	border-radius: 50%;
 	position: absolute;
 	transition: transform 0.2s linear;
 }
 
 input:checked + label div {
-	transform: translate(25px);
+	transform: translate(30px);
 }
 
 input:checked + label {
