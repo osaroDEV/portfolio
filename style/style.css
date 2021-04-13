@@ -5,6 +5,7 @@ body {
   background-color: #f1f1f1;
   font-family: "Exo", sans-serif;
   min-width: 240px;
+  transition: all 0.3s linear
 }
 
 /* global */
@@ -110,16 +111,44 @@ svg {
   font-size: 1.5rem;
 }
 /* sun & moon */
-#button-container {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: none;
-  border: none;
+.checkbox {
+	opacity: 0;
+	position: absolute;
 }
+
+.mode {
+	padding: 0.5em;
+	background-color: #222;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 60px;
+	position: relative;
+	border-radius: 1em;
+	/* transform: scale(2); */
+}
+
+.switch {
+	background-color: #fff;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: absolute;
+	transition: transform 0.2s linear;
+}
+
+input:checked + label div {
+	transform: translate(25px);
+}
+
+input:checked + label {
+	background: #aaa;
+}
+
+#button-container i {
+	color: yellow;
+}
+
 #dark,
 #light {
   position: absolute;

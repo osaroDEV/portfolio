@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/9b83bc795e.js"></script>
     <link rel="icon" href="./assets/images/logo.jpg" />
     <link
       href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"
@@ -176,18 +177,10 @@
           </div>
           <!-- light-dark-mode icon -->
           <div id="button-container">
-            <i
-              id="dark"
-              onClick="dlm()"
-              title="toggle dark mode"
-              class="bx bxs-sun"
-            ></i>
-            <i
-              id="light"
-              onClick="dlm()"
-              title="toggle dark mode"
-              class="bx bxs-moon"
-            ></i>
+            <input type="checkbox" class='checkbox' id='mode'>
+		<label for="mode" class='mode'><i class="fa fa-moon"></i><i class="fa fa-sun"></i>
+			<div class='switch'></div>
+		</label>
           </div>
           <!-- hamburger -->
           <div>
