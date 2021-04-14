@@ -587,7 +587,7 @@ form > p,
 #name-email-wrapper > p {
   margin-top: 1em;
 }
-input,
+#name-email-wrapper input,
 textarea {
   width: 100%;
   background-color: #ccc;
