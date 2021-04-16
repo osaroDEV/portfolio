@@ -110,42 +110,52 @@ svg {
   margin-left: 0.4em;
   font-size: 1.5rem;
 }
-/* sun & moon */
+/* theme: sun & moon */
 .checkbox {
 	opacity: 0;
 	position: absolute;
 }
 
 .mode {
-	padding: 0.5em;
+	padding: 0.5rem;
 	background-color: #222;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 60px;
+	width: 3rem;
 	position: relative;
-	border-radius: 1em;
+	border-radius: 1rem;
 	/* transform: scale(2); */
 }
 
 .switch {
 	background-color: #fff;
-	width: 18px;
-	height: 18px;
+	width: 1rem;
+	height: 1rem;
 	border-radius: 50%;
 	position: absolute;
-	transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transform: translate(0);
 }
 
 input:checked + label div {
-	transform: translate(30px);
+	transform: translate(1rem);
+}
+
+input:checked + label .switch {
+  background: #aaa;
+  border: 2px solid;
 }
 
 input:checked + label {
 	background: #aaa;
 }
 
-#button-container i {
+#button-container .fa-moon {
+	color: #fff;
+}
+
+#button-container .fa-sun {
 	color: yellow;
 }
 
