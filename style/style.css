@@ -135,11 +135,11 @@ svg {
 	border-radius: 50%;
 	position: absolute;
   transition: transform 0.2s linear;
-  transform: translate(0);
+  transform: translate(1rem);
 }
 
 input:checked + label div {
-	transform: translate(1rem);
+	transform: translate(0);
 }
 
 input:checked + label .switch {
