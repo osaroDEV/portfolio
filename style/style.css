@@ -5,7 +5,7 @@ body {
   background-color: #f1f1f1;
   font-family: "Exo", sans-serif;
   min-width: 240px;
-  transition: all 0.3s linear
+  transition: all 0.3s linear;
 }
 
 /* global */
@@ -112,34 +112,35 @@ svg {
 }
 /* theme: sun & moon */
 .checkbox {
-	opacity: 0;
-	position: absolute;
+  opacity: 0;
+  position: absolute;
 }
 
 .mode {
-	padding: 0.5rem;
-	background-color: #222;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 3rem;
-	position: relative;
-	border-radius: 1rem;
-	/* transform: scale(2); */
+  padding: 0.5rem;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 3rem;
+  position: relative;
+  border-radius: 1rem;
+  /* transform: scale(2); */
 }
 
 .switch {
-	background-color: #fff;
-	width: 1rem;
-	height: 1rem;
-	border-radius: 50%;
-	position: absolute;
+  background-color: #222;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 2px solid yellow;
+  position: absolute;
   transition: transform 0.2s linear;
   transform: translate(1rem);
 }
 
 input:checked + label div {
-	transform: translate(0);
+  transform: translate(0);
 }
 
 input:checked + label .switch {
@@ -148,15 +149,15 @@ input:checked + label .switch {
 }
 
 input:checked + label {
-	background: #aaa;
+  background: #aaa;
 }
 
 #button-container .fa-moon {
-	color: #fff;
+  color: #fff;
 }
 
 #button-container .fa-sun {
-	color: yellow;
+  color: yellow;
 }
 
 #dark,
@@ -587,6 +588,47 @@ li:hover {
   background: #ff5a0a;
   color: #fff;
 }
+
+#projects-wrapper h1 {
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  10% {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  20% {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  30% {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  40% {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  60% {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  70% {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  80% {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  90% {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+}
+
 /* contact */
 form {
   /* border: 1px solid; */
