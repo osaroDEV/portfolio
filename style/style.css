@@ -125,6 +125,7 @@ svg {
   width: 3rem;
   position: relative;
   border-radius: 1rem;
+  cursor: pointer;
   /* transform: scale(2); */
 }
 
