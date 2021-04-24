@@ -585,12 +585,35 @@ li:hover {
 .view a {
   text-decoration: none;
 }
+
 #projects button:hover {
   background: #ff5a0a;
   color: #fff;
 }
+/* under construction */
 
-#projects-wrapper h1 {
+.coming-soon {
+   border: 2px solid;
+   height: 100px; 
+   background-color: #222; 
+   margin-bottom: 2em;
+   border-radius: 0;
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
+   color: #fff; 
+   width: 100%;
+  animation: curve 2s ease-in-out infinite;
+}
+
+@keyframes curve {
+  50% {
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+  }
+}
+
+.coming-soon h1 {
   animation: glow 2s ease-in-out infinite;
 }
 
@@ -602,25 +625,25 @@ li:hover {
     color: rgba(255, 255, 255, 0.2);
   }
   20% {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.4);
   }
   30% {
-    color: rgba(255, 255, 255, 0.4);
-  }
-  40% {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  50% {
     color: rgba(255, 255, 255, 0.6);
   }
+  40% {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    color: rgba(255, 255, 255, 1);
+  }
   60% {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
   }
   70% {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
   }
   80% {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.4);
   }
   90% {
     color: rgba(255, 255, 255, 0.2);
