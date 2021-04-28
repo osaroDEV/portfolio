@@ -186,7 +186,7 @@ input:checked + label {
   font-size: 1.7rem;
 }
 .alter {
-  background-color: #555;
+  background-color: #000;
   color: #fff;
 }
 .alter-icons {
@@ -345,25 +345,35 @@ li:hover {
   margin-top: 1em;
 }
 #download {
+  display: inline-block;
+  font-family: "Exo", serif;
+  font-size: 1em;
   margin: 1em auto auto auto;
-  padding: 0.75em 0;
-  border-radius: 1.28em;
+  padding: 0.5em 0;
+  border-radius: 0.375em;
   background-color: #fc3549;
+  /* border: 1px solid #fc3549; */
+  border: 2px solid red;
   color: #fff;
   border: none;
   width: 80%;
   max-width: 250px;
-  cursor: not-allowed;
+  cursor: pointer;
   box-shadow: 0px 9px 29px rgba(252, 53, 73, 0.22);
 }
+
 #download i {
-  float: left;
-  margin-left: 1em;
+  margin-left: 0.5em;
 }
-#download span {
-  display: inline-block;
-  font-family: "Exo", serif;
-  /* margin: auto; */
+#download:hover {
+  /* background-color: #c20d1f; */
+  background-color: rgb(153, 16, 16);
+}
+#download:active {
+  /* background-color: #c20d1f; */
+  background-color: red;
+  border: 2px solid #fff;
+  box-shadow:  0 0 0 5px lightskyblue;
 }
 
 #bio-image {
