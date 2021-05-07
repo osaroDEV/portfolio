@@ -327,9 +327,9 @@ li:hover {
 #header {
   margin-top: 0.5em;
   padding: 0.25em 0.5em;
-  background-color: coral;
+  background-color: rgb(223, 186, 20);
   display: inline-block;
-  border-radius: 1.28em;
+  border-radius: 0 1.28em 0 1.28em;
   text-transform: uppercase;
   color: #fff;
 }
@@ -344,7 +344,7 @@ li:hover {
   line-height: 1.5em;
   margin-top: 1em;
 }
-#download {
+#btn {
   display: inline-block;
   font-family: "Exo", serif;
   font-size: 1em;
@@ -362,14 +362,14 @@ li:hover {
   box-shadow: 0px 9px 29px rgba(252, 53, 73, 0.22);
 }
 
-#download i {
+#btn i {
   margin-left: 0.5em;
 }
-#download:hover {
+#btn:hover {
   /* background-color: #c20d1f; */
   background-color: rgb(153, 16, 16);
 }
-#download:active {
+#btn:active {
   /* background-color: #c20d1f; */
   background-color: red;
   border: 2px solid #fff;
@@ -687,18 +687,36 @@ label {
   /* color: #555; */
   font-size: 0.8rem;
 }
-#contact button {
-  margin: auto;
+#btn-view {
   display: block;
-  font-size: 1.1rem;
-  font-family: "Exo", sans-serif;
-}
-#contact button:hover {
-  background: #ff5a0a;
+  font-family: "Exo", serif;
+  font-size: 1em;
+  margin: 2em auto auto auto;
+  padding: 0.5em 0;
+  border-radius: 0.375em;
+  background-color: #fc3549;
+  /* border: 1px solid #fc3549; */
+  border: 2px solid red;
   color: #fff;
+  border: none;
+  width: 80%;
+  max-width: 250px;
+  cursor: pointer;
+  box-shadow: 0px 9px 29px rgba(252, 53, 73, 0.22);
 }
-.view:hover a {
-  color: #fff;
+
+#btn-view i {
+  margin-left: 0.5em;
+}
+#btn-view:hover {
+  /* background-color: #c20d1f; */
+  background-color: rgb(153, 16, 16);
+}
+#btn-view:active {
+  /* background-color: #c20d1f; */
+  background-color: red;
+  border: 2px solid #fff;
+  box-shadow:  0 0 0 5px lightskyblue;
 }
 #contact i {
   transform: rotate(-30deg);
@@ -712,7 +730,7 @@ label {
 #footer {
   font-size: 0.8rem;
   text-align: center;
-  padding-bottom: 1em;
+  padding-bottom: 3em;
 }
 
 .bxs-chevron-up-square {
