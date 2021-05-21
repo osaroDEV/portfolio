@@ -384,6 +384,7 @@ li:hover {
   height: auto;
   min-height: 200px;
   max-height: 250px;
+  border: 10px solid rgb(223, 186, 20);
   border-radius: 50%;
   margin: auto;
   margin-bottom: 1.5em;
