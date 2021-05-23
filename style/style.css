@@ -3,7 +3,7 @@ html {
 }
 body {
   background-color: #f1f1f1;
-  font-family: "Exo", sans-serif;
+  font-family: 'Exo', sans-serif;
   min-width: 240px;
   transition: all 0.3s linear;
 }
@@ -69,10 +69,10 @@ h2 {
 }
 
 /* nav */
-#showcap {
+/* #showcap { */
   /* visibility: hidden; */
   /* margin-top: 3.75em; */
-}
+/* } */
 
 #nav-container {
   /* position: fixed;
@@ -225,7 +225,7 @@ input:checked + label {
 }
 #hamburger::after,
 #hamburger::before {
-  content: "";
+  content: '';
   width: 0.875em;
   /* height: 0.275em; */
   height: 0.1325em;
@@ -319,6 +319,7 @@ li:hover {
   margin: auto;
   text-align: center;
 }
+
 @media (min-width: 321px) {
   #content-container {
     width: 80%;
@@ -346,7 +347,7 @@ li:hover {
 }
 #btn {
   display: inline-block;
-  font-family: "Exo", serif;
+  font-family: 'Exo', serif;
   font-size: 1em;
   margin: 1em auto auto auto;
   padding: 0.5em 0;
@@ -373,7 +374,7 @@ li:hover {
   /* background-color: #c20d1f; */
   background-color: red;
   border: 2px solid #fff;
-  box-shadow:  0 0 0 5px lightskyblue;
+  box-shadow: 0 0 0 5px lightskyblue;
 }
 
 #bio-image {
@@ -417,7 +418,6 @@ li:hover {
   display: inline-block;
 }
 #social {
-  font-size: 2rem;
   margin-bottom: 1em;
 }
 
@@ -425,16 +425,21 @@ li:hover {
   color: #000;
 }
 
-#social i:hover {
-  /* color: rgba(167, 63, 63, 0.9); */
-  transform: scale(1.1);
-  transition: 0.2s;
+#social i {
+  font-size: 2rem;
+  transition: 0.3s all;
 }
+
+#social i:hover {
+  color: rgb(223, 186, 20);
+}
+
 /* skills */
 #skills {
   margin-bottom: 2em;
   min-width: 256px;
   max-width: 900px;
+  margin: 0 auto;
 }
 
 #icon-set {
@@ -447,6 +452,7 @@ li:hover {
   max-width: 100%;
   margin: auto;
 }
+
 #icon-set i {
   font-size: 7rem;
 }
@@ -454,36 +460,47 @@ li:hover {
 .html {
   color: rgb(249, 71, 7);
 }
+
 .css {
   color: rgb(23, 35, 137);
 }
+
 .js {
   color: rgb(223, 186, 20);
 }
+
 .react {
   color: rgb(99, 71, 204);
 }
+
 .jquery {
   color: rgb(58, 35, 107);
 }
+
 .git {
   color: rgb(66, 105, 88);
 }
+
 .nodejs {
   color: rgb(69, 8, 20);
 }
+
 .terminal {
   color: rgb(136, 89, 203);
 }
+
 .sass {
   color: rgb(247, 31, 162);
 }
+
 .figma {
   color: rgb(34, 158, 6);
 }
+
 .devices {
   color: rgb(82, 175, 134);
 }
+
 .layout {
   color: rgb(138, 134, 13);
 }
@@ -492,6 +509,7 @@ li:hover {
   margin: 1em auto auto auto;
   max-width: 800px;
 }
+
 #icon-wrapper {
   display: flex;
   flex-direction: column;
@@ -503,10 +521,11 @@ li:hover {
   font-size: 0.7rem;
   font-weight: 400;
 }
+
 #skill-icons i {
   background-color: rgba(255, 255, 255, 0.8);
   /* border: 2px solid; */
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3), -1px -2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* projects */
@@ -551,14 +570,14 @@ li:hover {
   height: 50%;
 } */
 #project-image {
-  background: url("../assets/images/scaledoff.jpg");
+  background: url('../assets/images/scaledoff.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   height: 50%;
 }
 #project-image2 {
-  background: url("../assets/images/calculator.jpg");
+  background: url('../assets/images/calculator.jpg');
   width: 100%;
   height: 40%;
   background-size: cover;
@@ -604,16 +623,16 @@ li:hover {
 /* under construction */
 
 .coming-soon {
-   border: 2px solid;
-   height: 100px; 
-   background-color: #222; 
-   margin-bottom: 2em;
-   border-radius: 0;
-   display: flex; 
-   justify-content: center; 
-   align-items: center; 
-   color: #fff; 
-   width: 100%;
+  border: 2px solid;
+  height: 100px;
+  background-color: #222;
+  margin-bottom: 2em;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 100%;
   animation: curve 2s ease-in-out infinite;
 }
 
@@ -670,19 +689,29 @@ form {
   margin-bottom: 2em;
   text-align: left;
 }
+
 form > p,
 #name-email-wrapper > p {
   margin-top: 1em;
 }
+
 #name-email-wrapper input,
 textarea {
   width: 100%;
   background-color: #ccc;
-  border-width: 0 0 2px 0;
+  color: #000;
+  border-width: 2px;
+  border-color: transparent transparent rgba(0, 0, 0, 0.3) transparent;
   padding: 0.5em;
   outline: none;
-  font-family: "Exo", sans-serif;
+  font-family: 'Exo', sans-serif;
 }
+
+#name-email-wrapper input:focus,
+textarea:focus {
+  border-color: rgb(223, 186, 20); 
+}
+
 
 label {
   /* color: #555; */
@@ -690,13 +719,12 @@ label {
 }
 #btn-view {
   display: block;
-  font-family: "Exo", serif;
+  font-family: 'Exo', serif;
   font-size: 1em;
   margin: 2em auto auto auto;
   padding: 0.5em 0;
   border-radius: 0.375em;
   background-color: #fc3549;
-  /* border: 1px solid #fc3549; */
   border: 2px solid red;
   color: #fff;
   border: none;
@@ -704,6 +732,7 @@ label {
   max-width: 250px;
   cursor: pointer;
   box-shadow: 0px 9px 29px rgba(252, 53, 73, 0.22);
+  transition: 3s all;
 }
 
 #btn-view i {
@@ -717,8 +746,9 @@ label {
   /* background-color: #c20d1f; */
   background-color: red;
   border: 2px solid #fff;
-  box-shadow:  0 0 0 5px lightskyblue;
+  box-shadow: 0 0 0 5px lightskyblue;
 }
+
 #contact i {
   transform: rotate(-30deg);
 }
@@ -727,6 +757,7 @@ label {
   max-width: 660px;
   margin: auto;
 }
+
 /* footer */
 #footer {
   font-size: 0.8rem;
